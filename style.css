@@ -462,6 +462,10 @@
     margin-top: 0.5rem;
   }
 
+  div.trend div.heading {
+    margin-bottom: 1rem;
+  }
+
   div.trend div.heading span{
     color: rgb(255, 179, 74);
   }
