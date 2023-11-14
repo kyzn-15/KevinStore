@@ -1,0 +1,110 @@
+:root {
+    --primary: rgb(7, 162, 228);
+    --hover: rgb(4, 96, 136);
+    --bg: white;
+    --gradient: linear-gradient(to top right, skyblue, darkblue);
+  }
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+body{
+    background: var(--gradient);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+div.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 25vw;
+    height: 85vh;
+    border-radius: 0.5rem;
+}
+
+div.box h1 {
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+div.input {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+h2.subheading {
+    font-size: 1rem;
+}
+
+.input-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input-container a {
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+    text-decoration: none;
+}
+
+input.input-form {
+    width: 17.5rem;
+    height: 2rem;
+    padding-left: 1rem;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 18px var(--primary);
+}
+
+input.input-form::placeholder{
+    font-size: 1rem;
+}
+
+div.login{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login p {
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
+}
+
+div.login button {
+    width: 10rem;
+    height: 2rem;
+    border-radius: 1.5rem;
+    background-color: var(--primary);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.login button:hover {
+    background-color: var(--hover);
+}
+
+div.login button a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 0.2rem;
+}
+
+
