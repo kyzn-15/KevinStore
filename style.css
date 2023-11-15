@@ -1,5 +1,6 @@
 :root {
     --primary: rgb(7, 162, 228);
+    --hover: rgb(4, 106, 149);
     --bg: white;
     --gradient: linear-gradient(to top right, skyblue, darkblue);
     --shadow: rgb(195, 195, 195);
@@ -25,7 +26,7 @@
     font-family: 'Poppins', sans-serif;
     background-color: var(--bg);
     color: #fff;
-    min-height: 10000px;
+    /* min-height: 10000px; */
   }
   
   /* Navbar */
@@ -379,6 +380,11 @@
     color: var(--primary);
   }
 
+  /* div.time-wrap {
+    display: flex;
+    flex-direction: column;
+  } */
+
   section.sales div.top span {
     color: yellow;
   }
@@ -501,6 +507,166 @@
     background-position: center;
     margin-right: 0.5rem;
   }
+
+  .product{
+    width: 80vw;
+    margin: 0px auto;
+    margin-top: 0.5rem;
+  }
+
+  .product .heading span {
+    color: var(--primary);
+  }
+
+  .product .content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card-product {
+    /* background-color: salmon; */
+    box-shadow: 0px 0px 18px var(--shadow);
+    border-radius: 0.3rem;
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding-top: 1rem;
+    margin: 1rem 1rem;
+    cursor: pointer;
+  }
+
+  .card-product h1 {
+    margin-top: 0.5rem;
+  }
+
+  .card-product div.line {
+    height: 3px;
+    background-color: var(--shadow);
+  }
+
+  .card-product button {
+    margin: 1rem 0rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 0.2rem;
+    background-color: var(--primary);
+    /* height: 1.4rem; */
+  }
+
+  .card-product button:hover{
+    background-color: var(--hover);
+  }
+
+  .card-product button a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    /* margin-top: 0.2rem;
+    margin-bottom: 5rem; */
+  }
+
+  .product-image {
+    background-image: url(img/baju.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .card-product h1 {
+    font-size: 1.5rem;
+  }
+
+  div.line-1#footer-line {
+    width: 100%;
+  }
+
+  footer, div.left {
+    display: flex;
+    margin: 0px auto;
+    width: 80vw;
+    margin-top: 1rem;
+    gap: 3rem;
+    padding-bottom: 0.5rem;
+    /* align-items: center; */
+  }
+
+  .footer-heading {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  .footer-3-container{
+    display: flex;
+    gap: 1rem;
+  }
+
+  .footer-3 .footer-3-container .sosmed-footer {
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--primary);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .footer-3 .footer-3-container .sosmed-footer:hover{
+    background-color: var(--hover);
+  }
+
+  .sosmed-footer a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  p.footer-text {
+    color: gray;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  p.footer-text:hover{
+    color: var(--primary);
+  }
+
+  .logo{
+    height: 14rem;
+    width: 15rem;
+    /* background-color: gray; */
+    background-image: url(img/logo.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  h1.footer-logo {
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  span#logo-2 {
+    color: var(--primary);
+  }
+
+  .name {
+    background-color: var(--primary);
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+  }
   
   
  
@@ -526,6 +692,11 @@
     
     .navbarv {
       padding: 1.5rem;
+    }
+
+    .logo-text img {
+      height: 40px;
+      width: 40px;
     }
 
     .navbarv-extra a.icon{

@@ -5,7 +5,6 @@ document.querySelector('#hamburger-menu').onclick = () => {
   navbarNav.classList.toggle('active');
 };
 
-
 // Klik di luar elemen
 const hm = document.querySelector('#hamburger-menu');
 

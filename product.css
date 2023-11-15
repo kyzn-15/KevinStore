@@ -1,0 +1,93 @@
+:root {
+    --primary: rgb(7, 162, 228);
+    --hover: rgb(4, 106, 149);
+    --bg: white;
+    --gradient: linear-gradient(to top right, skyblue, darkblue);
+    --shadow: rgb(195, 195, 195);
+  }
+
+.product-detail-container {
+    margin-top: 10rem;
+    width: 100%;
+    /* background-color: salmon; */
+    display: flex;
+    justify-content: center;
+}
+
+.product-detail {
+    display: flex;
+    gap: 2rem;
+    /* background-color: yellow; */
+    box-shadow: 0px 0px 18px var(--shadow);
+    border-radius: 0.3rem;    
+    /* border-radius: 2rem; */
+}
+
+.image-wrapper {
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: skyblue; */
+    border-radius: 0.3rem;
+}
+
+.product-detail .image-wrapper div.product-detail-image {
+    width: 18rem;
+    height: 18rem;
+    background-image: url(img/baju.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-color: gray;
+}
+
+.product-detail-description {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    /* align-items: center; */
+}
+
+.product-detail-description h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.product-detail-description h5 {
+    font-weight: 600;
+}
+
+.product-detail-description p {
+    font-size: 1rem;
+    max-width: 80%;
+    text-wrap: wrap;
+    font-weight: 400;
+}
+
+div.line-2 {
+    width: 80%;
+    height: 2px;
+    border-radius: 2rem;
+    background-color: var(--shadow);
+    margin-bottom: 0.5rem;
+}
+
+.detail p {
+    width: 50%;
+}
+
+button.product-button {
+    width: 35%;
+    margin: 0px auto;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    border-radius: 0.2rem;
+}
+
+button.product-button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
