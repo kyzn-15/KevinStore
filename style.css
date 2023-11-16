@@ -743,6 +743,10 @@
       padding: 1.5rem;
     }
 
+    .navbarv-extra{
+      margin-left: 1.5rem;
+    }
+
     .logo-text img {
       height: 40px;
       width: 40px;
@@ -1039,6 +1043,10 @@
   .logo-text img {
     height: 40px;
     width: 40px;
+  }
+
+  .navbarv-extra{
+    margin-left: 1.5rem;
   }
 
   .navbarv-extra a.icon{
