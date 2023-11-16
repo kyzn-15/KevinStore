@@ -39,8 +39,12 @@
     color: white;
   }
 
-  .social-media h5 {
+  .social-media a {
     font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
   }
 
   button#closeButton{
@@ -67,7 +71,7 @@
     /* top: 0; */
     left: 0;
     right: 0;
-    z-index: 9999;
+    /* z-index: 9999; */
   }
 
   .navbarv-nav {
@@ -689,7 +693,7 @@
       /* display: inline-block; */
       color: var(--primary);
     }
-    
+
     .navbarv {
       padding: 1.5rem;
     }
@@ -749,9 +753,209 @@
     input#seacrh {
       width: 25rem;
     }
+
+    .slide, .carousel-item img{
+      margin-top: 5rem;
+      max-width: 80vw;
+      max-height: 25rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    div.kategori-container .carousel {
+      margin: 0px auto;
+      margin-top: 2rem;
+      max-width: 20.5rem;
+    }
+  
+    /* div.kategori-container .carousel-inner{
+      max-width: 20rem;
+    } */
+  
+    div.kategori-container .carousel .carousel-item .card-wrap{
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      width: 20rem;
+    }
+  
+    div.kategori-container .carousel .carousel-item .card{
+      --size: 8rem;
+      max-width: var(--size);
+      max-height: calc(--size + 2rem);
+      /* margin-right: 0.2rem; */
+      /* background-color: salmon; */
+    }
+  
+    div.card-image{
+      width: 6rem;
+      border-radius: 2rem;
+      height: 10.25rem;
+    }
+
+    .time-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    div.time {
+      color: var(--primary);
+      font-size: 3rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-left: 1rem;
+      
   }
   
-  /* Mobile Phone */
-  @media (max-width: 450px) {
-    
+    div.titik {
+      color: var(--primary);
+      padding-bottom: 0.8rem;
+    }
+  
+    .time-container {
+      background-color: var(--primary);
+      border-radius: 0.4rem;
+      width: 2rem;
+      height: 2rem;
+      display: flex;
+      font-size: 1rem;
+      justify-content: center;
+      align-items: center;
   }
+
+  section.sales div.top h1 {
+    margin-left: 0.5rem;
+    font-size: 2rem;
+    color: var(--primary);
+  }
+
+  section.sales div.top span {
+    color: yellow;
+  }
+
+  section.sales div.bottom{
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.5rem;
+    border-radius: 0.5rem;
+  }
+
+  section.sales div.bottom .carousel .carousel-inner{
+    display: flex;
+    margin: 0px auto;
+    max-width: 20rem;
+  }
+  
+  section.sales div.bottom .carousel .carousel-item .card-wrap{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 45rem;
+  }
+  
+  
+  section.sales div.bottom .carousel.slide {
+    margin: 0px;
+    margin-top: 1.5rem;
+    /* margin: 0px auto; */
+    /* max-width: 35rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section.sales div.bottom .carousel .carousel-item .card{
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 8rem;
+    max-height: 10.25rem;
+    border: 1px var(--shadow) solid;
+    /* box-shadow: 0px 0px 4px var(--shadow); */
+    /* background-color: salmon; */
+  }
+
+  div.card-body {
+    display: flex;
+    align-items: center;
+  }
+
+  div.card-image{
+    background-image: url(img/baju.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+
+
+  section.sales div.bottom .carousel .carousel-inner{
+    width: 60rem;
+    display: flex;
+    margin: 0px auto;
+  }
+
+  
+  div.trending-card {
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    /* background-color: salmon; */
+    box-shadow: 0px 0px 10px var(--shadow);
+    width: 9.1rem;
+    padding-right: 1rem;
+    height: 7.5rem;
+    margin-top: 1rem;
+    margin: 0px 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+  }
+  
+  .trend-product {
+    background-image: url(img/baju.jpeg);
+    background-color: white;
+    width: 7rem;
+    height: 6.5rem;
+    background-size: 4rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 0.5rem;
+  }
+
+  div.trending-card div.description h5 {
+    font-size: 1rem;
+  } 
+
+  div.trending-card div.description p {
+    font-size: 0.8rem;
+  }
+
+  footer {
+    flex-direction: column-reverse;
+  }
+
+  div.footer-3-container {
+    flex-direction: column;
+  }
+
+  
+  .logo{
+    height: 14rem;
+    width: 15rem;
+    /* background-color: gray; */
+    background-image: url(img/logo.png);
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  
+}
