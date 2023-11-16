@@ -590,6 +590,7 @@
   }
 
   footer, div.left {
+    margin: 0px;
     display: flex;
     margin: 0px auto;
     width: 80vw;
@@ -609,7 +610,7 @@
     gap: 1rem;
   }
 
-  .footer-3 .footer-3-container .sosmed-footer {
+  .sosmed-footer {
     height: 2rem;
     width: 2rem;
     background-color: var(--primary);
@@ -620,7 +621,7 @@
     cursor: pointer;
   }
 
-  .footer-3 .footer-3-container .sosmed-footer:hover{
+  .sosmed-footer:hover{
     background-color: var(--hover);
   }
 
@@ -672,6 +673,46 @@
     font-weight: bold;
   }
   
+  /* Contact Section */
+  .contact-section{
+    margin: 0px auto;
+    margin-top: 11rem;
+    width: 80vw;
+    height: 70vh;
+    /* background-color: salmon; */
+    box-shadow: 0px 0px 18px var(--shadow);
+    border-radius: 0.5rem;
+  }
+
+  .contact-section div.top {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid var(--shadow);
+    margin-bottom: 1rem;
+  }
+
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: green; */
+    height: 60vh;
+    border-radius: 0.5rem;
+  }
+
+  .footer-3-container#contact-sec {
+    gap: 4rem;
+  }
+
+   div.sosmed-footer.contact{
+    width: 8rem;
+    height: 8rem;
+  }
+
+  div.sosmed-footer.contact a {
+    font-size: 2rem;
+  }
   
  
   @media (max-width: 1366px) {
@@ -683,7 +724,6 @@
   /* Tablet */
 @media (max-width: 758px) {
     
-  
     #hamburger-menu {
       display: inline-block;
       color: black;
@@ -692,6 +732,11 @@
     #hamburger-menu:hover {
       /* display: inline-block; */
       color: var(--primary);
+    }
+
+    div.social-media a{
+      text-align: center;
+      font-size: 0.8rem;
     }
 
     .navbarv {
@@ -936,6 +981,21 @@
     font-size: 0.8rem;
   }
 
+  .product .content {
+    display: flex;
+    justify-content: center;
+  }
+
+  div.product div.card-product{
+    width: 40%;
+    height: 40%;
+  }
+
+  div#last {
+    display: none;
+  }
+
+
   footer {
     flex-direction: column-reverse;
   }
@@ -957,5 +1017,293 @@
 
 /* Mobile Phone */
 @media (max-width: 450px) {
+  #hamburger-menu {
+    display: inline-block;
+    color: black;
+  }
   
+  #hamburger-menu:hover {
+    /* display: inline-block; */
+    color: var(--primary);
+  }
+
+  div.social-media a{
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  .navbarv {
+    padding: 1.5rem;
+  }
+
+  .logo-text img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .navbarv-extra a.icon{
+    font-size: 2rem;
+  }
+
+  a#hamburger-menu{
+    font-size: 2.5rem;
+  }
+
+  .navbarv .navbarv-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background: var(--gradient);
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    width: 20rem;
+    height: 100vh;
+    transition: 0.3s;
+    flex-direction: column;
+    justify-content: start;
+    align-items: baseline;
+  }
+
+  .navbarv .navbarv-nav.active {
+    right: 0;
+  }
+
+  .navbarv .navbarv-nav a {
+    color: black;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.2rem;
+    font-size: 2rem;
+  }
+
+  .navbarv .navbarv-nav a:hover {
+    color: white;
+  }
+
+  .navbarv .navbarv-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbarv .navbarv-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  input#seacrh {
+    width: 25rem;
+  }
+
+  .slide, .carousel-item img{
+    margin-top: 5rem;
+    max-width: 80vw;
+    max-height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.kategori-container .carousel {
+    margin: 0px auto;
+    margin-top: 2rem;
+    max-width: 20.5rem;
+  }
+
+  /* div.kategori-container .carousel-inner{
+    max-width: 20rem;
+  } */
+
+  div.kategori-container .carousel .carousel-item .card-wrap{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 20rem;
+  }
+
+  div.kategori-container .carousel .carousel-item .card{
+    --size: 8rem;
+    max-width: var(--size);
+    max-height: calc(--size + 2rem);
+    /* margin-right: 0.2rem; */
+    /* background-color: salmon; */
+  }
+
+  div.card-image{
+    width: 6rem;
+    border-radius: 2rem;
+    height: 10.25rem;
+  }
+
+  .time-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div.time {
+    color: var(--primary);
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 1rem;
+    
+}
+
+  div.titik {
+    color: var(--primary);
+    padding-bottom: 0.8rem;
+  }
+
+  .time-container {
+    background-color: var(--primary);
+    border-radius: 0.4rem;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+section.sales div.top h1 {
+  margin-left: 0.5rem;
+  font-size: 2rem;
+  color: var(--primary);
+}
+
+section.sales div.top span {
+  color: yellow;
+}
+
+section.sales div.bottom{
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+section.sales div.bottom .carousel .carousel-inner{
+  display: flex;
+  margin: 0px auto;
+  max-width: 20rem;
+}
+
+section.sales div.bottom .carousel .carousel-item .card-wrap{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 45rem;
+}
+
+
+section.sales div.bottom .carousel.slide {
+  margin: 0px;
+  margin-top: 1.5rem;
+  /* margin: 0px auto; */
+  /* max-width: 35rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.sales div.bottom .carousel .carousel-item .card{
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 8rem;
+  max-height: 10.25rem;
+  border: 1px var(--shadow) solid;
+  /* box-shadow: 0px 0px 4px var(--shadow); */
+  /* background-color: salmon; */
+}
+
+div.card-body {
+  display: flex;
+  align-items: center;
+}
+
+div.card-image{
+  background-image: url(img/baju.jpeg);
+  background-size: cover;
+  background-position: center;
+  width: 6.25rem;
+  height: 6.25rem;
+}
+
+
+section.sales div.bottom .carousel .carousel-inner{
+  width: 60rem;
+  display: flex;
+  margin: 0px auto;
+}
+
+
+div.trending-card {
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  /* background-color: salmon; */
+  box-shadow: 0px 0px 10px var(--shadow);
+  width: 9.1rem;
+  padding-right: 1rem;
+  height: 7.5rem;
+  margin-top: 1rem;
+  margin: 0px 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+}
+
+.trend-product {
+  background-image: url(img/baju.jpeg);
+  background-color: white;
+  width: 7rem;
+  height: 6.5rem;
+  background-size: 4rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 0.5rem;
+}
+
+div.trending-card div.description h5 {
+  font-size: 1rem;
+} 
+
+div.trending-card div.description p {
+  font-size: 0.8rem;
+}
+
+.product .content {
+  display: flex;
+  justify-content: center;
+}
+
+div.product div.card-product{
+  width: 40%;
+  height: 40%;
+}
+
+div#last {
+  display: none;
+}
+
+
+footer {
+  flex-direction: column-reverse;
+}
+
+div.footer-3-container {
+  flex-direction: column;
+}
+
+
+.logo{
+  height: 14rem;
+  width: 15rem;
+  /* background-color: gray; */
+  background-image: url(img/logo.png);
+  background-position: center;
+  background-size: cover;
+}
 }
