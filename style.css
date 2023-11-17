@@ -541,6 +541,10 @@
     cursor: pointer;
   }
 
+  .card-product:hover{
+    box-shadow: 0px 0px 10px var(--primary);
+  }
+
   .card-product h1 {
     margin-top: 0.5rem;
   }

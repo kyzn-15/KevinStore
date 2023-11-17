@@ -107,4 +107,15 @@ div.login button a {
     margin-bottom: 0.2rem;
 }
 
+@media (max-width: 758px) {
+    div.box {
+        width: 85vw;
+        height: 60vh;
+    }
+
+    div.box#sign-up {
+        width: 85vw;
+        height: 70vh;
+    }
+}
 
